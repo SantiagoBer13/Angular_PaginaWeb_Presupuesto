@@ -1,27 +1,22 @@
-# AppPresupuesto
+# Aplicación de Presupuesto
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.3.
+## URL
 
-## Development server
+[https://santiagober13.github.io/Angular_PaginaWeb_Presupuesto/](https://santiagober13.github.io/Angular_PaginaWeb_Presupuesto/)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Descripción
 
-## Code scaffolding
+This project was generated with Angular CLI version 17.0.3.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Esta aplicación permite a los usuarios gestionar sus ingresos y egresos, proporcionando un control sencillo y eficiente sobre las finanzas personales. Los usuarios pueden agregar, eliminar y visualizar los registros de ingresos y egresos.  
+En esta versión, **no hay persistencia de datos**, ya que aún no se ha implementado la conexión a la base de datos. La información se guarda de manera espontánea, lo que es útil para hacer cálculos inmediatos pero no para un almacenamiento a largo plazo.
 
-## Build
+## Características
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Gestión de Ingresos**: Permite agregar, visualizar y eliminar registros de ingresos.
+- **Gestión de Egresos**: Permite agregar, visualizar y eliminar registros de egresos.
 
-## Running unit tests
+## Tecnologías utilizadas
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- **Frontend**: Angular
+- **Estilos**: CSS
