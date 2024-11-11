@@ -1,0 +1,21 @@
+.message {
+    position: relative;
+    text-align: center;
+    background: linear-gradient(135deg, #FF5049, #7b4397);
+    color: #e7e7e7;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    max-width: 400px;
+    min-height: 50px; /* Evita que el contenedor cambie de tamaño */
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease; /* Transición suave al cambiar clases */
+}
+
+.message p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px;
+}

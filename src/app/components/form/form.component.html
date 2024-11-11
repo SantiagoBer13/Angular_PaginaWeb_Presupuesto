@@ -1,0 +1,42 @@
+<form (ngSubmit)="f.form.valid && addValor()" #f="ngForm">
+  <div class="agregar">
+    <div class="agregar_contenedor">
+      <select
+        class="agregar_tipo"
+        (change)="cambioOperacio($event)"
+        [ngClass]="{ redfocus: tipoOperacion == '-' }"
+      >
+        <option value="+" selected>+</option>
+        <option value="-">-</option>
+      </select>
+      <input
+        [ngClass]="{ redfocus: tipoOperacion === '-' }"
+        type="text"
+        class="agregar_descripcion"
+        placeholder="Agregar Descripción"
+        [(ngModel)]="name"
+        [ngModelOptions]="{ standalone: true }"
+        required
+      />
+      <input
+        [ngClass]="{ redfocus: tipoOperacion === '-' }"
+        type="number"
+        class="agregar_valor"
+        placeholder="Valor"
+        [(ngModel)]="value"
+        [ngModelOptions]="{ standalone: true }"
+        required
+      />
+      <button
+        class="agregar_btn"
+        type="submit"
+        [ngClass]="{ red: tipoOperacion === '-' }"
+      >
+        <i class="bi bi-send"></i>
+      </button>
+    </div>
+  </div>
+</form>
+<div class="message">
+    <p>{{ message }}</p>
+</div>

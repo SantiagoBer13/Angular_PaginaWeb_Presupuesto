@@ -1,0 +1,31 @@
+<div class="egreso">
+  <h2 class="egreso_titulo">Egresos</h2>
+
+  <ng-container *ngIf="getEgresos().length === 0">
+    <p>Aún no tienes egresos agregados.</p>
+  </ng-container>
+
+  <ng-container *ngIf="getEgresos().length > 0">
+    <ng-container *ngFor="let egreso of getEgresos()">
+      <div class="elemento limpiarEstilos">
+        <div class="elemento_descripcion">{{ egreso.getName() }}</div>
+        <div class="right limpiarEstilos">
+          <div class="elemento_valor">
+            - {{ egreso.getValue() | currency : "COP" : "$" }}
+          </div>
+          <div class="elemento_porcentaje">
+            {{ egreso.getValue() / ingresoTotal | percent }}
+          </div>
+          <div class="elemento_eliminar">
+            <button
+              class="elemento_eliminar--btn"
+              (click)="deleteEgreso(egreso)"
+            >
+              <i class="bi bi-x-circle"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </ng-container>
+</div>
