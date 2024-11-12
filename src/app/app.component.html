@@ -23,7 +23,7 @@
           - {{ getEgresoTotal() | currency : "COP" : "$" }}
         </div>
         <div class="presupuesto_egreso--porcentaje">
-          {{ getPorcentajeEgreso() | percent }}
+          {{ getPorcentajeEgreso() | number:'1.2-2' }}%
         </div>
       </div>
     </div>

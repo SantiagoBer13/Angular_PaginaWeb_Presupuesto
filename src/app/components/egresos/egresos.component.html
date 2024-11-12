@@ -14,7 +14,7 @@
             - {{ egreso.getValue() | currency : "COP" : "$" }}
           </div>
           <div class="elemento_porcentaje">
-            {{ egreso.getValue() / ingresoTotal | percent }}
+            {{ egreso.getValue() / ingresoTotal |number:'1.2-2' }}%
           </div>
           <div class="elemento_eliminar">
             <button
